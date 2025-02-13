@@ -20,11 +20,6 @@ class AsciiArtwork{
       }
       width = max;
     }
-    AsciiArtwork(){
-      std::string_view artwork = (std::string_view{ 
-R"(Ascii
-Not Loaded!)"});
-    };
 };
 
 const AsciiArtwork logo = {(std::string_view{ 
@@ -92,7 +87,7 @@ const AsciiArtwork title = {(std::string_view{
                                            /\__  _\                        /\  __`\
                                            \/_/\ \/    __   _ __    ___ ___\ \ \/\ \   __  _
                                               \ \ \  /'__`\/\`'__\/' __` __`\ \ \ \ \ /\ \/'\
-                                               \ \ \/\  __/\ \ \/ /\ \/\ \/\ \ \ \_\ \\/>  </
+                     ████║                     \ \ \/\  __/\ \ \/ /\ \/\ \/\ \ \ \_\ \\/>  </
                                                 \ \_\ \____\\ \_\ \ \_\ \_\ \_\ \_____\/\_/\_\
                                                  \/_/\/____/ \/_/  \/_/\/_/\/_/\/_____/\//\/_/
 )"})};

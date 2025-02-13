@@ -36,7 +36,7 @@ public:
     void paint(Canvas c) {
         if (this->size.width < minWindow.width || this->size.height < minWindow.height) {
             std::u32string tmpErr = U"Terminal window is too small! Zoom Out [ctrl -/+]";
-            Painter{c}[{.x=(this->size.width - (int)tmpErr.size())/2, .y=(this->size.height/2)-1}] << (tmpErr | Brush{.background = TColor()0XFF0000} | Trait::Blink );
+            Painter{c}[{.x=(this->size.width - (int)tmpErr.size())/2, .y=(this->size.height/2)-1}] << (tmpErr | Brush{.background = TColor(0XFF0000)} | Trait::Blink );
             return;
         }
 
